@@ -53,14 +53,20 @@ if (document.querySelector('body').dataset.id == "main") {
     });
 
 
-    const newsImg = document.querySelector('.news__img'),
+    const newsImg = document.querySelectorAll('.news__img'),
         newsItem = document.querySelectorAll('.news__item'),
-        newsContent = document.querySelector('.news__content');
+        newsContent = document.querySelectorAll('.news__content');
 
-    newsItem.forEach(e, ()=>{
+    function toggleClasses(e) {
+        e.childNodes[0].classList.toggle('news__img-active');
+        e.childNodes[1].classList.toggle('news__content-active');
+    }
+    newsItem.forEach(e => {
         e.addEventListener('mouseover', () => {
-
-        console.log('пидорас');
-    })
+            toggleClasses(e);
+        });
+        e.addEventListener('mouseout', () => {
+            toggleClasses(e);
+        })
     });
 }
