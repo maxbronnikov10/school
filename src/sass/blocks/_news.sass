@@ -1,0 +1,35 @@
+.news
+    margin-top: 20px
+    &__wrapper
+        width: 100%
+        display: grid
+        grid-template: repeat(2,450px) / repeat(2, 600px)
+        justify-content: space-around
+        row-gap: 20px
+    &__item
+        display: flex
+        flex-direction: column
+
+    &__img
+        height: 450px
+        transition: 1.5s all
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &-active
+            opacity: 0
+    &__content
+        opacity: 0
+        position: absolute
+        width: 600px
+        height: 450px
+        transition: 1.5s all
+        &-active
+            opacity: 1
+    &__text
+        padding: 25px
+    &__btn
+        height: 100px
+        width: 100px
+        margin: 0 auto
