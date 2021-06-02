@@ -53,9 +53,10 @@ if (document.querySelector('body').dataset.id == "main") {
     });
 
 
-    const newsImg = document.querySelectorAll('.news__img'),
-        newsItem = document.querySelectorAll('.news__item'),
-        newsContent = document.querySelectorAll('.news__content');
+
+}
+if (document.querySelector('body').dataset.id == "main" || document.querySelector('body').dataset.id == "news") {
+    const newsItem = document.querySelectorAll('.news__item');
 
     function toggleClasses(e) {
         e.childNodes[0].classList.toggle('news__img-active');
