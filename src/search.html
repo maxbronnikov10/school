@@ -46,16 +46,16 @@
                 <li class="header__menu-item"><a href="">Поиск ветеранов</a></li>
                 <li class="header__menu-item"><a href="">О нас</a></li>
             </ul>
-
-        </div>
+            </div>
     </header>
     <section class="search">
         <div class="container">
             <form action="" class="search__form">
-                <input name="name" type="text">
-                <input name="surname" type="text">
-                <input name="patronymic" type="text">
-                <input name="date" type="text">
+                <input required name="name" type="text" placeholder="ВВЕДИТЕ ИМЯ ВЕТЕРАНА" min="2" max="100">
+                <input required name="surname" type="text" placeholder="ВВЕДИТЕ ФАМИЛИЮ ВЕТЕРАНА" min="2" max="100">
+                <input required name="patronymic" type="text" placeholder="ВВЕДИТЕ ОТЧЕСТВО ВЕТЕРАНА" min="2" max="100">
+                <input required name="date" type="text" placeholder="ВВЕДИТЕ ДАТУ РОЖДЕНИЯ ВЕТЕРАНА" min="2" max="100">
+                <button class="btn btn-search">ОТПРАВИТЬ</button>
             </form>
         </div>
     </section>
