@@ -14,8 +14,6 @@
             width: 100%
             height: 100%
             object-fit: fill
-    &__text
-        color: #fff
     &__social
         display: flex
         width: 40px
@@ -23,6 +21,9 @@
         svg
             path
                 fill: #fff
+                transition: .5s all
+                &:hover
+                    fill: $second-color
     &__menu
         margin-top: 30px
         list-style-type: none
@@ -32,6 +33,9 @@
         padding-bottom: 15px
         border-bottom: 5px solid #fff
         &-item
+            transition: 1s all
+            &:hover
+                transform: translateY(-7px)
             a
                 color: #fff
         &-noneborder
@@ -68,7 +72,7 @@
         cursor: pointer
         color: #fff
         &-active
-            background-color: #828005
+            background-color: $second-color
             color: #000
     &__left
         position: absolute
