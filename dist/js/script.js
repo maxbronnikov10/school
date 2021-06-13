@@ -71,3 +71,15 @@ if (document.querySelector('body').dataset.id == "main" || document.querySelecto
         })
     });
 }
+
+function onCardClick() {
+    const cards = document.querySelectorAll('.soldiers__card');
+    cards.forEach(e => {
+        e.addEventListener('click', () => {
+            e.classList.toggle('soldiers__card_rotated');
+        });
+    });
+}
+
+onCardClick();
+
