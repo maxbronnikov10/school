@@ -42,109 +42,45 @@
             <ul class="header__menu header__menu-noneborder">
                 <li class="header__menu-item"><a href="index.html">Главная</a></li>
                 <li class="header__menu-item"><a href="news.html">Новости</a></li>
-                <li class="header__menu-item"><a href="#">Солдаты</a></li>
-                <li class="header__menu-item"><a href="add.html">Добавить ветеранов</a></li>
+                <li class="header__menu-item"><a href="soldiers.html">Солдаты</a></li>
+                <li class="header__menu-item"><a href="search.html">Добавить ветеранов</a></li>
                 <li class="header__menu-item"><a href="about.html">О нас</a></li>
             </ul>
         </div>
     </header>
-    <section class="soldiers">
+    <section class="add">
         <div class="container">
-            <div class="soldiers__wrapper">
-                <div class="soldiers__card">
-                    <div class="soldiers__card-front">
-                        <div class="soldiers__card-photo">
-                            <img src="img/noPhoto.png" alt="soldier photo">
-                        </div>
-                        <div class="soldiers__card-info">
-                            <div class="soldiers__card-date">26.05.2021</div>
-                            <div class="soldiers__card-name">Бердышев Алексей Николаевич</div>
-                        </div>
+            <h2 class="title">Добавить ветерана</h2>
+            <form action="" class="add__form">
+                <input required name="name" type="text" placeholder="Имя" min="2" max="100">
+                <input required name="surname" type="text" placeholder="Фамилия" min="2" max="100">
+                <input required name="patronymic" type="text" placeholder="Отчество" min="2" max="100">
+                <input required name="rank" type="text" placeholder="Звание" min="2" max="100">
+                <input required name="military_branch" type="text" placeholder="Род войск" min="2" max="100">
+                <input required name="division" type="text" placeholder="Подразделение" min="2" max="100">
+                <input required name="date_birth" type="text" placeholder="День рождения" min="2" max="100">
+                <input required name="month_birth" type="text" placeholder="Месяц рождения" min="2" max="100">
+                <input required name="year_birth" type="text" placeholder="Год рождения" min="2" max="100">
+                <input required name="place_birth" type="text" placeholder="Место рождения" min="2" max="100">
+                <input required name="life_path" type="text" placeholder="Жизненный путь" min="2" max="100">
+                <input required name="date_death" type="text" placeholder="Дата сметри" min="2" max="100">
+                <input required name="month_death" type="text" placeholder="Месяц сметри" min="2" max="100">
+                <input required name="year_death" type="text" placeholder="Год смерти" min="2" max="100">
+                <input required name="place_death" type="text" placeholder="Место смерти" min="2" max="100">
+                <button class="btn add__form-btn">ОТПРАВИТЬ</button>
+            </form>
+            <h2 class="title">Как стать участником проекта</h2>
+            <ul class="add__list">
 
-                    </div>
-                    <div class="soldiers__card-back">
-                        <div class="soldiers__card-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur modi animi natus porro, vitae consequuntur rerum adipisci dolorum? Saepe,
-                            nesciunt.</div>
-                        <a href="soldiersCard.html"><button class="soldiers__card-btn">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="soldiers__card">
-                    <div class="soldiers__card-front">
-                        <div class="soldiers__card-photo">
-                            <img src="img/noPhoto.png" alt="soldier photo">
-                        </div>
-                        <div class="soldiers__card-info">
-                            <div class="soldiers__card-date">26.05.2021</div>
-                            <div class="soldiers__card-name">Бердышев Алексей Николаевич</div>
-                        </div>
+                <li class="add__list-item"> Собери ценные сведения о своем родственнике-ветеране: фотографии, награды,
+                    письма, добавь анкету ветерана через Личный Кабинет и впиши его имя навечно в личный состав
+                    «Бессмертного полка»</li>
+                <li class="add__list-item">Привлеки внимание к проекту в социальных сетях — расскажи о нем на своей
+                    странице</li>
 
-                    </div>
-                    <div class="soldiers__card-back">
-                        <div class="soldiers__card-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur modi animi natus porro, vitae consequuntur rerum adipisci dolorum? Saepe,
-                            nesciunt.</div>
-                        <a href="soldiersCard.html"><button class="soldiers__card-btn">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="soldiers__card">
-                    <div class="soldiers__card-front">
-                        <div class="soldiers__card-photo">
-                            <img src="img/noPhoto.png" alt="soldier photo">
-                        </div>
-                        <div class="soldiers__card-info">
-                            <div class="soldiers__card-date">26.05.2021</div>
-                            <div class="soldiers__card-name">Бердышев Алексей Николаевич</div>
-                        </div>
-
-                    </div>
-                    <div class="soldiers__card-back">
-                        <div class="soldiers__card-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur modi animi natus porro, vitae consequuntur rerum adipisci dolorum? Saepe,
-                            nesciunt.</div>
-                        <a href="soldiersCard.html"><button class="soldiers__card-btn">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="soldiers__card">
-                    <div class="soldiers__card-front">
-                        <div class="soldiers__card-photo">
-                            <img src="img/noPhoto.png" alt="soldier photo">
-                        </div>
-                        <div class="soldiers__card-info">
-                            <div class="soldiers__card-date">26.05.2021</div>
-                            <div class="soldiers__card-name">Бердышев Алексей Николаевич</div>
-                        </div>
-
-                    </div>
-                    <div class="soldiers__card-back">
-                        <div class="soldiers__card-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur modi animi natus porro, vitae consequuntur rerum adipisci dolorum? Saepe,
-                            nesciunt.</div>
-                        <a href="soldiersCard.html"><button class="soldiers__card-btn">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="soldiers__card">
-                    <div class="soldiers__card-front">
-                        <div class="soldiers__card-photo">
-                            <img src="img/noPhoto.png" alt="soldier photo">
-                        </div>
-                        <div class="soldiers__card-info">
-                            <div class="soldiers__card-date">26.05.2021</div>
-                            <div class="soldiers__card-name">Бердышев Алексей Николаевич</div>
-                        </div>
-
-                    </div>
-                    <div class="soldiers__card-back">
-                        <div class="soldiers__card-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur modi animi natus porro, vitae consequuntur rerum adipisci dolorum? Saepe,
-                            nesciunt.</div>
-                        <a href="soldiersCard.html"><button class="soldiers__card-btn">Подробнее</button></a>
-                    </div>
-                </div>
-            </div>
+            </ul>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">

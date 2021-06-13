@@ -1,12 +1,11 @@
 .search
     margin-top: 50px
-    &__title
-        text-align: center
+
     &__form
+        display: grid
         width: 100%
         justify-content: center
-        display: grid
-        grid-template-columns: repeat(3,1fr)
+        grid-template: 60px / repeat(2,1fr)
         grid-auto-rows: 60px
         row-gap: 10px
         column-gap: 10px
@@ -14,10 +13,10 @@
             color: #9D9DAD
             padding: 15px
         &-btn
-            grid-column: 1/6
+            grid-column: 1/3
             margin: 0 auto
     &__opport
-        margin-top: 30px
+        margin-top: 80px
     &__text
         margin-right: 50px
         text-align: center

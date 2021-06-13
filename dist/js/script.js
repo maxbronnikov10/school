@@ -3,14 +3,13 @@ if (document.querySelector('body').dataset.id == "main") {
         right = document.querySelector('.header__right'),
         slider = document.querySelector('.header__slider');
 
-    const index = 1;
     function getClassesForSlides() {
         for (i = 0; i < slider.childNodes.length; i++) {
 
             slider.childNodes[i].className = "";
 
             slider.childNodes[i].classList.add('header__slide');
-            if (i > index || i < index) slider.childNodes[i].classList.add("header__slide-none");
+            if (i > 1 || i < 1) slider.childNodes[i].classList.add("header__slide-none");
         }
     }
 
@@ -25,7 +24,7 @@ if (document.querySelector('body').dataset.id == "main") {
         left.style.pointerEvents = 'none'
         left.classList.toggle('header__left-active');
         const a = slider.childNodes[slider.childNodes.length - 1];
-        const b = slider.childNodes[index - 1];
+        const b = slider.childNodes[0];
         slider.insertBefore(a, b);
 
         getClassesForSlides();
@@ -41,8 +40,8 @@ if (document.querySelector('body').dataset.id == "main") {
 
         right.style.pointerEvents = 'none'
         right.classList.toggle('header__right-active');
-        const a = slider.childNodes[slider.childNodes.length - 1];
-        const b = slider.childNodes[index - 1];
+        const a = slider.childNodes[slider.childNodes.length];
+        const b = slider.childNodes[0];
         slider.insertBefore(b, a);
         getClassesForSlides();
         setTimeout(() => {
@@ -80,3 +79,10 @@ card.forEach((e) => {
         e.childNodes[1].classList.toggle("soldiers__card-back-active");
     });
 });
+
+const link = document.querySelectorAll(".soldiers__card a[href='soldiersCard.html']");
+link.forEach(e => {
+    e.addEventListener('click', () => {
+        e.preventDefault();
+    });
+})

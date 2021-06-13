@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body data-id="main">
     <header class="header">
         <div class="container">
             <div class="header__promo">
                 <div class="header__logo">
                     <img class="header__logo-img" src="img/logo.png" alt="logo">
                 </div>
-                <h1 class="title title-main"><a href="index.html">НЕИЗВЕСТНАЯ СОТНЯ</a></h1>
+                <h1 class="title title-main"><a href="#">НЕИЗВЕСТНАЯ СОТНЯ</a></h1>
                 <div class="header__social">
                     <a href="" class="header__social-link">
                         <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,89 +39,49 @@
                     </a>
                 </div>
             </div>
-            <ul class="header__menu header__menu-noneborder">
-                <li class="header__menu-item"><a href="index.html">Главная</a></li>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#">Главная</a></li>
                 <li class="header__menu-item"><a href="news.html">Новости</a></li>
                 <li class="header__menu-item"><a href="soldiers.html">Солдаты</a></li>
-                <li class="header__menu-item"><a href="search.html">Поиск ветеранов</a></li>
+                <li class="header__menu-item"><a href="add.html">Добавить ветеранов</a></li>
                 <li class="header__menu-item"><a href="about.html">О нас</a></li>
             </ul>
-        </div>
-    </header>
-    <section class="search">
-        <h2 class="title">Добавить ветерана</h2>
-        <div class="container">
-            <form action="" class="search__form">
-                <input required name="name" type="text" placeholder="Имя" min="2" max="100">
-                <input required name="surname" type="text" placeholder="Фамилия" min="2" max="100">
-                <input required name="patronymic" type="text" placeholder="Отчество" min="2" max="100">
-                <input required name="rank" type="text" placeholder="Звание" min="2" max="100">
-                <input required name="military_branch" type="text" placeholder="Род войск" min="2" max="100">
-                <input required name="division" type="text" placeholder="Подразделение" min="2" max="100">
-                <input required name="date_birth" type="text" placeholder="День рождения" min="2" max="100">
-                <input required name="month_birth" type="text" placeholder="Месяц рождения" min="2" max="100">
-                <input required name="year_birth" type="text" placeholder="Год рождения" min="2" max="100">
-                <input required name="place_birth" type="text" placeholder="Место рождения" min="2" max="100">
-                <input required name="life_path" type="text" placeholder="Жизненный путь" min="2" max="100">
-                <input required name="date_death" type="text" placeholder="Дата сметри" min="2" max="100">
-                <input required name="month_death" type="text" placeholder="Месяц сметри" min="2" max="100">
-                <input required name="year_death" type="text" placeholder="Год смерти" min="2" max="100">
-                <input required name="place_death" type="text" placeholder="Место смерти" min="2" max="100">
-                <button class="btn search__form-btn">ОТПРАВИТЬ</button>
-            </form>
-            <div class="search__opport">
-                <div class="search__text">
-                    На портале Вы можете:
+            <div class="header__slider">
+                <div class="header__slide">
+                    <div class="header__slide-img">
+                        <img src="img/slide1.jpg" alt="slide">
+                    </div>
+                    <div class="header__slide-text">По информации ЦАМО, Лебедев Виктор Иванович. 1912 г.р., пропал без
+                        вести. Об этом мы узнали в одном из документов обобщенного банка данных «Мемориал» (Название
+                        источника донесения Кунцевский ОВК, г. Москва, номер фонда источника информации Кунцевский РВК,
+                        номер дела источника информации 24-10).</div>
                 </div>
-                <div class="search__wrapper">
-                    <div class="search__item">
-                        <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M5.28495 16.1219H1.82511V8.22679H0.113281V5.515H1.82511V3.88404C1.82511 1.65199 2.79595 0.330078 5.56704 0.330078H7.86153V3.05967H6.4318C5.35567 3.05967 5.28495 3.43666 5.28495 4.14131V5.51419H7.88002L7.57944 8.22679H5.28495V16.1219Z"
-                                fill="#2F2F2F" />
-                        </svg>
-                        <div class="search__item-descr">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatibus quaerat
-                            doloremque provident est nihil, quas voluptates veniam repellendus beatae.
-                        </div>
+                <div class="header__slide">
+                    <div class="header__slide-img">
+
+                        <img src="img/slide2.jpg" alt="slide">
                     </div>
-                    <div class="search__item">
-                        <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M5.28495 16.1219H1.82511V8.22679H0.113281V5.515H1.82511V3.88404C1.82511 1.65199 2.79595 0.330078 5.56704 0.330078H7.86153V3.05967H6.4318C5.35567 3.05967 5.28495 3.43666 5.28495 4.14131V5.51419H7.88002L7.57944 8.22679H5.28495V16.1219Z"
-                                fill="#2F2F2F" />
-                        </svg>
-                        <div class="search__item-descr">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatibus quaerat
-                            doloremque provident est nihil, quas voluptates veniam repellendus beatae.
-                        </div>
+                    <div class="header__slide-text">Хромеев Иван Сергеевич- политический руководитель роты отдельного
+                        стрелкового батальона 154-ой отдельной морской стрелковой бригады
+                        Краюшкин А. А, старший сержант 154 отдельной морской стрелковой бригады
+                        Кунцевский РВК.</div>
+                </div>
+                <div class="header__slide ">
+                    <div class="header__slide-img">
+
+                        <img src="img/slide3.jpg" alt="slide">
                     </div>
-                    <div class="search__item">
-                        <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M5.28495 16.1219H1.82511V8.22679H0.113281V5.515H1.82511V3.88404C1.82511 1.65199 2.79595 0.330078 5.56704 0.330078H7.86153V3.05967H6.4318C5.35567 3.05967 5.28495 3.43666 5.28495 4.14131V5.51419H7.88002L7.57944 8.22679H5.28495V16.1219Z"
-                                fill="#2F2F2F" />
-                        </svg>
-                        <div class="search__item-descr">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatibus quaerat
-                            doloremque provident est nihil, quas voluptates veniam repellendus beatae.
-                        </div>
-                    </div>
-                    <div class="search__item">
-                        <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M5.28495 16.1219H1.82511V8.22679H0.113281V5.515H1.82511V3.88404C1.82511 1.65199 2.79595 0.330078 5.56704 0.330078H7.86153V3.05967H6.4318C5.35567 3.05967 5.28495 3.43666 5.28495 4.14131V5.51419H7.88002L7.57944 8.22679H5.28495V16.1219Z"
-                                fill="#2F2F2F" />
-                        </svg>
-                        <div class="search__item-descr">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatibus quaerat
-                            doloremque provident est nihil, quas voluptates veniam repellendus beatae.
-                        </div>
-                    </div>
+                    <div class="header__slide-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Consequatur recusandae unde dolore ea quam quisquam fugit pariatur et, dolorem suscipit
+                        exercitationem commodi laudantium nihil molestiae ipsam quidem animi sapiente iusto at
+                        doloremque ullam nobis possimus quae. Voluptatem rerum reprehenderit tempore nostrum, velit id
+                        aliquid necessitatibus commodi fugit asperiores eius doloribus?</div>
                 </div>
             </div>
+            <div class="header__left">←</div>
+            <div class="header__right">→</div>
         </div>
-    </section>
+    </header>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
