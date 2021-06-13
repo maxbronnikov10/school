@@ -1,25 +1,15 @@
 .footer
     margin-top: 100px
+
     background-color: #474545
     &__wrapper
-        display: grid
-        grid-template: repeat(3,auto) / repeat(4, auto)
-        row-gap: 35px
-        justify-content: space-around
-    &__header
-        margin-top: 25px
-        transition: 1s all
-        &:hover
-            transform: translateY(-7px)
-        a
-            color: #fff
-
-    &__list
-        &-item
-            margin-top: 8px
-            list-style-type: none
-            transition: 1s all
-            &:hover
-                transform: translateX(7px)
-            a
-                color: #fff
+        padding-top: 20px
+        padding-bottom: 20px
+        display: flex
+        justify-content: space-between
+    &__social
+        svg
+            path
+                fill: white
+    &__text
+        color: white

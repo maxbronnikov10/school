@@ -72,14 +72,11 @@ if (document.querySelector('body').dataset.id == "main" || document.querySelecto
     });
 }
 
-function onCardClick() {
-    const cards = document.querySelectorAll('.soldiers__card');
-    cards.forEach(e => {
-        e.addEventListener('click', () => {
-            e.classList.toggle('soldiers__card_rotated');
-        });
+
+const card = document.querySelectorAll(".soldiers__card");
+
+card.forEach((e) => {
+    e.addEventListener("click", () => {
+        e.childNodes[1].classList.toggle("soldiers__card-back-active");
     });
-}
-
-onCardClick();
-
+});
