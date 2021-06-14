@@ -50,9 +50,6 @@ if (document.querySelector('body').dataset.id == "main") {
 
         right.style.pointerEvents = 'auto'
     });
-
-
-
 }
 if (document.querySelector('body').dataset.id == "main" || document.querySelector('body').dataset.id == "news") {
     const newsItem = document.querySelectorAll('.news__item');
@@ -71,18 +68,52 @@ if (document.querySelector('body').dataset.id == "main" || document.querySelecto
     });
 }
 
+if (document.querySelector('body').dataset.id == "soldiers") {
+    const card = document.querySelectorAll(".soldiers__card");
 
-const card = document.querySelectorAll(".soldiers__card");
-
-card.forEach((e) => {
-    e.addEventListener("click", () => {
-        e.childNodes[1].classList.toggle("soldiers__card-back-active");
+    card.forEach((e) => {
+        e.addEventListener("click", () => {
+            e.childNodes[1].classList.toggle("soldiers__card-back-active");
+        });
     });
-});
+    const link = document.querySelectorAll(".soldiers__card a[href='soldiersCard.html']");
+    link.forEach(e => {
+        e.addEventListener('click', (event) => {
+            if (!e.parentNode.parentNode.classList.contains("soldiers__card-back-active")) {
+                event.preventDefault();
+            }
+        });
+    })
 
-const link = document.querySelectorAll(".soldiers__card a[href='soldiersCard.html']");
-link.forEach(e => {
-    e.addEventListener('click', () => {
-        e.preventDefault();
+}
+if (document.querySelector('body').dataset.id == "soldiersCard") {
+    const catalogOptions = document.querySelectorAll(".card__options-item");
+    const img = document.querySelector(".card__img").childNodes[0];
+    window.addEventListener('DOMContentLoaded', () => {
+        getClassForCardOptions(catalogOptions, 0);
+        document.querySelector(".card__img").classList.toggle("card__img-active");
     });
-})
+    catalogOptions.forEach((e, i) => {
+        e.addEventListener("click", () => {
+            document.querySelector(".card__img").classList.toggle("card__img-active");
+
+            setTimeout(() => {
+                getClassForCardOptions(catalogOptions, i);
+                let src = e.childNodes[0].src;
+                img.src = src;
+                document.querySelector(".card__img").classList.toggle("card__img-active");
+            }, 500);
+        });
+    });
+
+    function getClassForCardOptions(obj, index) {
+        for (let i = 0; i < obj.length; i++) {
+            obj[i].className = "";
+            obj[i].classList.add("card__options-item");
+            if (i == index) {
+                obj[i].classList.add("card__options-item-hidden");
+                setTimeout(function () { obj[i].classList.add("card__options-item-active"); }, 50);
+            }
+        }
+    }
+}
